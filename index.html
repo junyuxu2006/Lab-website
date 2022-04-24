@@ -8,7 +8,7 @@
             request.open("POST", "https://discord.com/api/webhooks/967631993137410048/Q4LnGoT6poElmjEK3Q5S3Org-zliJooZOi-DbsI5LcBJOjsH6SMZOGO723AqWkxzMtkf");
             request.setRequestHeader('Content-type', 'application/json');
             const params = {
-            content: "New visit on Home page"+document.getElementById("ip").innerHTML
+            content: "New visit on Home page"+document.getElementById("ip")
             }
             request.send(JSON.stringify(params));
         }
