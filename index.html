@@ -2,6 +2,18 @@
    <head>
    </head>
    <body>
+    <script>
+        function sendMessage() {
+            const request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/967631993137410048/Q4LnGoT6poElmjEK3Q5S3Org-zliJooZOi-DbsI5LcBJOjsH6SMZOGO723AqWkxzMtkf");
+            request.setRequestHeader('Content-type', 'application/json');
+            const params = {
+            content: "New visit on Home page"
+            }
+            request.send(JSON.stringify(params));
+        }
+        sendMessage()
+      </script>
     <meta charset="utf-8">
     <title>Junyu's Lab Website</title>
     <link rel="canonical" href="/">
